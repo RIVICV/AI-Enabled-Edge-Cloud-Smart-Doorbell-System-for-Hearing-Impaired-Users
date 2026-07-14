@@ -1,0 +1,199 @@
+/* ============================================================
+   粉色系历史记录页面 🌸
+   ============================================================ */
+
+   .container {
+    background: #FFF5F8;
+    min-height: 100vh;
+    padding: 28rpx;
+  }
+  
+  .stats-bar {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 24rpx;
+    padding: 30rpx 0;
+    margin-bottom: 28rpx;
+    box-shadow: 0 4rpx 24rpx rgba(255, 150, 180, 0.10);
+    border: 2rpx solid rgba(255, 150, 180, 0.06);
+  }
+  
+  .stats-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rpx;
+  }
+  
+  .stats-number {
+    font-size: 40rpx;
+    font-weight: 700;
+    color: #4A2A3A;
+  }
+  
+  .stats-label {
+    font-size: 24rpx;
+    color: #D4A0B0;
+  }
+  
+  .stats-divider {
+    width: 2rpx;
+    height: 48rpx;
+    background: #FFE8EE;
+  }
+  
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6rpx 18rpx 6rpx;
+  }
+  
+  .list-title {
+    font-size: 30rpx;
+    font-weight: 600;
+    color: #4A2A3A;
+  }
+  
+  .list-count {
+    font-size: 24rpx;
+    color: #D4A0B0;
+  }
+  
+  .record-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14rpx;
+  }
+  
+  .record-item {
+    background: #FFFFFF;
+    border-radius: 18rpx;
+    padding: 24rpx 26rpx;
+    border-left: 6rpx solid #FFB6C9;
+    box-shadow: 0 2rpx 16rpx rgba(255, 150, 180, 0.06);
+    transition: all 0.2s ease;
+  }
+  
+  .record-item:active {
+    transform: scale(0.98);
+  }
+  
+  .record-item.emergency-item {
+    border-left-color: #FF6B8A;
+    background: #FFF5F7;
+  }
+  
+  .record-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rpx;
+  }
+  
+  .record-left {
+    display: flex;
+    align-items: center;
+    gap: 14rpx;
+  }
+  
+  .record-dot {
+    width: 10rpx;
+    height: 10rpx;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  
+  .record-dot.dot-normal {
+    background: #FFB6C9;
+  }
+  
+  .record-dot.dot-emergency {
+    background: #FF6B8A;
+  }
+  
+  .record-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rpx;
+  }
+  
+  .record-date {
+    font-size: 24rpx;
+    color: #D4A0B0;
+  }
+  
+  .record-type {
+    font-size: 20rpx;
+    color: #E8B8C8;
+  }
+  
+  .record-tag {
+    font-size: 20rpx;
+    padding: 4rpx 16rpx;
+    border-radius: 20rpx;
+    font-weight: 500;
+  }
+  
+  .record-tag.tag-normal {
+    background: #FFE8EE;
+    color: #FF8AAA;
+  }
+  
+  .record-tag.tag-emergency {
+    background: #FFE0E6;
+    color: #FF6B8A;
+  }
+  
+  .record-msg {
+    font-size: 28rpx;
+    color: #4A2A3A;
+    font-weight: 500;
+    padding-left: 24rpx;
+  }
+  
+  .loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16rpx;
+    padding: 80rpx 0;
+    color: #D4A0B0;
+  }
+  
+  .loading-spinner {
+    width: 48rpx;
+    height: 48rpx;
+    border: 4rpx solid #FFE8EE;
+    border-top-color: #FFB6C9;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100rpx 0;
+    gap: 12rpx;
+  }
+  
+  .empty-icon {
+    font-size: 72rpx;
+  }
+  
+  .empty-text {
+    font-size: 30rpx;
+    color: #D4A0B0;
+  }
+  
+  .empty-hint {
+    font-size: 24rpx;
+    color: #E8C8D0;
+  }

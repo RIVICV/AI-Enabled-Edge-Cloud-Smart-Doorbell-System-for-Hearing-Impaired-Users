@@ -1,0 +1,22 @@
+# 微信小程序特定
+node_modules/
+miniprogram_npm/
+.project
+.idea/
+*.iml
+
+# 日志
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 配置文件（如果有敏感信息）
+config.js
+.env
+*.secret.js
+
+# 打包文件
+dist/
+build/

@@ -1,0 +1,139 @@
+.container {
+    background: #F0F7FF;
+    min-height: 100vh;
+    padding: 28rpx;
+  }
+  
+  .card {
+    background: #FFFFFF;
+    border-radius: 24rpx;
+    padding: 32rpx 28rpx;
+    box-shadow: 0 4rpx 28rpx rgba(74, 144, 217, 0.06);
+    border: 2rpx solid rgba(74, 144, 217, 0.04);
+  }
+  
+  .card-header {
+    margin-bottom: 32rpx;
+  }
+  
+  .card-title {
+    font-size: 34rpx;
+    font-weight: 700;
+    color: #1A2A4A;
+    display: block;
+  }
+  
+  .card-subtitle {
+    font-size: 24rpx;
+    color: #7A9AB5;
+    display: block;
+    margin-top: 8rpx;
+  }
+  
+  .form-group {
+    margin-bottom: 32rpx;
+  }
+  
+  .form-label {
+    font-size: 28rpx;
+    color: #1A2A4A;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 12rpx;
+  }
+  
+  .form-input {
+    width: 100%;
+    height: 80rpx;
+    background: #F5F9FF;
+    border-radius: 16rpx;
+    padding: 0 24rpx;
+    font-size: 28rpx;
+    color: #1A2A4A;
+    border: 2rpx solid #E8F0FE;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: #4A90D9;
+    box-shadow: 0 0 0 6rpx rgba(74, 144, 217, 0.08);
+  }
+  
+  .form-hint {
+    font-size: 22rpx;
+    color: #4A90D9;
+    display: block;
+    margin-top: 10rpx;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16rpx;
+  }
+  
+  .save-btn {
+    background: linear-gradient(145deg, #4A90D9, #357ABD);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50rpx;
+    padding: 28rpx 0;
+    font-size: 30rpx;
+    font-weight: 500;
+    box-shadow: 0 4rpx 20rpx rgba(74, 144, 217, 0.25);
+    transition: all 0.3s ease;
+  }
+  
+  .save-btn:active {
+    transform: scale(0.96);
+    box-shadow: 0 2rpx 12rpx rgba(74, 144, 217, 0.15);
+  }
+  
+  .save-btn[disabled] {
+    background: #C8D8E8;
+    box-shadow: none;
+  }
+  
+  .test-btn {
+    background: transparent;
+    color: #4A90D9;
+    border: 2rpx solid #4A90D9;
+    border-radius: 50rpx;
+    padding: 26rpx 0;
+    font-size: 28rpx;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .test-btn:active {
+    transform: scale(0.96);
+    background: #E8F0FE;
+  }
+  
+  .test-btn[disabled] {
+    color: #C8D8E8;
+    border-color: #C8D8E8;
+  }
+  
+  .info-tip {
+    display: flex;
+    align-items: flex-start;
+    gap: 14rpx;
+    margin-top: 32rpx;
+    padding: 20rpx 24rpx;
+    background: #F5F9FF;
+    border-radius: 16rpx;
+    border-left: 4rpx solid #4A90D9;
+  }
+  
+  .info-icon {
+    font-size: 28rpx;
+    flex-shrink: 0;
+  }
+  
+  .info-text {
+    font-size: 24rpx;
+    color: #7A9AB5;
+    line-height: 1.6;
+  }
