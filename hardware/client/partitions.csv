@@ -1,0 +1,15 @@
+# ESP-IDF Partition Table
+# Name,   Type, SubType, Offset,   Size,    Flags
+# 兼容 ESP32-S3-N8R8 (8MB Flash) 和 N16R8 (16MB Flash)
+# factory: 应用固件（含 ESP-SR 库代码 + TFLite 敲门/门铃模型）
+# hzk:     OLED 中文字库 (HZK16, 256KB, 手动烧录)
+# model:   ESP-SR 模型分区 (MultiNet7 + AFE, idf.py flash 自动烧录)
+#
+# 总大小 = 0x800000 = 8MB (N8R8 刚好用满, N16R8 有富余)
+#
+# 字库烧录: python -m esptool -p COMx write_flash 0x210000 HZK16
+nvs,      data, nvs,     0x9000,  0x6000,
+phy_init, data, phy,     0xf000,  0x1000,
+factory,  app,  factory, 0x10000, 0x200000,
+hzk,      data, ,        0x210000,0x40000,
+model,    data, ,        0x250000,0x5B0000,
